@@ -1,13 +1,13 @@
-package org.dipartimento.johnny;
+package it.unical.inf.webappes1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JohnnyApplication {
+public class WebAppEs3Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(JohnnyApplication.class, args);
+        SpringApplication.run(WebAppEs3Application.class, args);
     }
 
 }

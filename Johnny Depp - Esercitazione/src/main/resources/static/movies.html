@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Johnny Depp - Movies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/addFilm.js" defer></script>
+    <script src="js/deleteFilm.js" defer></script>
+
+</head>
+<body>
+<header class="bg-black p-3 mb-4 text-white">
+
+    <div class="container">
+        <h1 class="text-center"><i class="fas fa-video"></i> Johnny Depp - Movies</h1>
+        <nav class="text-center text-white-50">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Explore Johnny Depp's Famous Movies</h5>
+            <p class="card-text">Behold the illustrious repertoire of grand films featuring this esteemed actor.</p>
+        </div>
+    </div>
+
+    <section class="mb-5">
+        <h5 class="text-center">Top 3 Movies of Johnny Depp</h5>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="img/Piratideicaraibi_lamaledizionedellaprimaluna.jpg" class="card-img-top" alt="Pirates of the Caribbean">
+                    <div class="card-body">
+                        <h5 class="card-title">Pirates of the Caribbean: The Curse of the Black Pearl</h5>
+                        <p class="card-text">In this swashbuckling adventure, Captain Jack Sparrow teams up with a young blacksmith to rescue the governor's daughter from cursed pirates.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="img/Edward_mani_di_forbice.png" class="card-img-top" alt="Edward Scissorhands">
+                    <div class="card-body">
+                        <h5 class="card-title">Edward Scissorhands</h5>
+                        <p class="card-text">This modern fairy tale tells the story of an artificial man named Edward, who has scissors for hands and struggles to find his place in a suburban community.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="img/Alice_in_wonderland.jpg" class="card-img-top" alt="Alice in Wonderland">
+                    <div class="card-body">
+                        <h5 class="card-title">Alice in Wonderland</h5>
+                        <p class="card-text">In Tim Burton's whimsical adaptation, Alice returns to the fantastical world she first encountered as a child, where she reunites with the Mad Hatter and battles the Red Queen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="text-end mb-3">
+        <button id="addFilmButton" class="btn btn-outline-primary btn-sm">
+            <i class="fas fa-plus"></i> Add a new movie
+        </button>
+
+        <button id="removeFilmButton" class="btn btn-outline-danger btn-sm">
+            Remove Movie
+        </button>
+
+    </div>
+
+    <section class="mb-5">
+        <table class="table table-striped table-bordered" id="filmTable">
+            <caption>Johnny Depp's Movie Table</caption>
+            <thead class="table-dark">
+            <tr>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Producer</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Pirates of the Caribbean: The Curse of the Black Pearl</td>
+                <td><span class="badge bg-primary">2003</span></td>
+                <td>Walt Disney Pictures</td>
+                <td><button class="btn btn-danger btn-sm deleteButton"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>Edward Scissorhands</td>
+                <td><span class="badge bg-primary">1990</span></td>
+                <td>20th Century Fox</td>
+                <td><button class="btn btn-danger btn-sm deleteButton"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>Finding Neverland</td>
+                <td><span class="badge bg-primary">2004</span></td>
+                <td>Columbia Pictures</td>
+                <td><button class="btn btn-danger btn-sm deleteButton"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>Alice in Wonderland</td>
+                <td><span class="badge bg-primary">2010</span></td>
+                <td>Walt Disney Pictures</td>
+                <td><button class="btn btn-danger btn-sm deleteButton"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>Sweeney Todd: The Demon Barber of Fleet Street</td>
+                <td><span class="badge bg-primary">2007</span></td>
+                <td>DreamWorks Pictures</td>
+                <td><button class="btn btn-danger btn-sm deleteButton"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>Donnie Brasco</td>
+                <td><span class="badge bg-primary">1997</span></td>
+                <td>Columbia Pictures</td>
+                <td><button class="btn btn-danger btn-sm deleteButton"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>Charlie and the Chocolate Factory</td>
+                <td><span class="badge bg-primary">2005</span></td>
+                <td>Warner Bros.</td>
+                <td><button class="btn btn-danger btn-sm deleteButton"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>Public Enemies</td>
+                <td><span class="badge bg-primary">2009</span></td>
+                <td>Universal Pictures</td>
+                <td><button class="btn btn-danger btn-sm deleteButton"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>Black Mass</td>
+                <td><span class="badge bg-primary">2015</span></td>
+                <td>Warner Bros.</td>
+                <td><button class="btn btn-danger btn-sm deleteButton"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>The Rum Diary</td>
+                <td><span class="badge bg-primary">2011</span></td>
+                <td>Film District</td>
+                <td><button class="btn btn-danger btn-sm deleteButton"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <div id="filmForm" style="display: none; margin-top: 20px;">
+        <h3>Add a new movie</h3>
+        <form id="newFilmForm">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" id="title" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="year" class="form-label">Year</label>
+                <input type="number" id="year" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="producer" class="form-label">Producer</label>
+                <input type="text" id="producer" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Movie</button>
+        </form>
+    </div>
+
+    <div id="removeFilmForm" style="display: none; margin-top: 10px;">
+        <h3>Remove Movie</h3>
+        <form id="removeFilmByNumberForm" onsubmit="removeFilmByNumber(event)">
+            <label for="filmNumber">Movie's Number:</label>
+            <input type="number" id="filmNumber" min="1" required>
+            <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+        </form>
+    </div>
+
+</main>
+
+<footer class="bg-black text-center p-3 mt-4 text-white">
+    <p>Matteo Marzano 2024 - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
